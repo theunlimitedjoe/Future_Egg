@@ -1,0 +1,52 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Future Egg"
+run/main_scene="uid://v2wma8aw3pk"
+config/features=PackedStringArray("4.6", "Mobile")
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/image="uid://dhu0p5gqdwn4v"
+config/icon="res://icon.svg"
+boot_splash/minimum_display_time=2000
+
+[display]
+
+window/size/viewport_width=720
+window/size/viewport_height=1280
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/handheld/orientation=1
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/onscreenkeyboard/plugin.cfg")
+
+[input_devices]
+
+virtual_controller/ios/enable_controller=false
+virtual_controller/ios/enable_left_thumbstick=true
+virtual_controller/ios/enable_right_thumbstick=true
+virtual_controller/ios/enable_button_a=true
+virtual_controller/ios/enable_button_b=true
+virtual_controller/ios/enable_button_x=true
+virtual_controller/ios/enable_button_y=true
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="mobile"
+textures/vram_compression/import_etc2_astc=true
+textures/default_filters/anisotropic_filtering_level=1

@@ -1,0 +1,29 @@
+[gd_resource type="Theme" format=3 uid="uid://bs5qau8s4w3u0"]
+
+[ext_resource type="FontFile" uid="uid://d2w6nx7j75wom" path="res://Fonts/Semplicita Medium.otf" id="1_o3q6d"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m1sou"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x3ynw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_svdd5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wv7et"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lgkij"]
+
+[resource]
+default_font = ExtResource("1_o3q6d")
+Button/colors/font_color = Color(0.79788774, 0.83642346, 0.8977866, 1)
+Button/colors/font_focus_color = Color(0.78431374, 0.94509804, 0.92941177, 1)
+Button/colors/font_hover_color = Color(0.78431374, 0.94509804, 0.92941177, 1)
+Button/colors/font_hover_pressed_color = Color(0.78431374, 0.94509804, 0.92941177, 1)
+Button/colors/font_outline_color = Color(0.21587099, 0.40680856, 0.86853033, 0.6392157)
+Button/colors/font_pressed_color = Color(0.4862745, 0.89411765, 0.87058824, 1)
+Button/constants/outline_size = 0
+Button/font_sizes/font_size = 83
+Button/styles/disabled = SubResource("StyleBoxEmpty_m1sou")
+Button/styles/focus = SubResource("StyleBoxEmpty_x3ynw")
+Button/styles/hover = SubResource("StyleBoxEmpty_svdd5")
+Button/styles/normal = SubResource("StyleBoxEmpty_wv7et")
+Button/styles/pressed = SubResource("StyleBoxEmpty_lgkij")

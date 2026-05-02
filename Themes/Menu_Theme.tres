@@ -1,0 +1,24 @@
+[gd_resource type="Theme" format=3 uid="uid://w8nod8ca4phc"]
+
+[ext_resource type="FontFile" uid="uid://foksasfukr3n" path="res://Fonts/Semplicita Light.otf" id="1_m1sou"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m1sou"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x3ynw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_svdd5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wv7et"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lgkij"]
+
+[resource]
+default_font = ExtResource("1_m1sou")
+Button/colors/font_color = Color(1, 1, 1, 0.5176471)
+Button/constants/outline_size = 0
+Button/font_sizes/font_size = 64
+Button/styles/disabled = SubResource("StyleBoxEmpty_m1sou")
+Button/styles/focus = SubResource("StyleBoxEmpty_x3ynw")
+Button/styles/hover = SubResource("StyleBoxEmpty_svdd5")
+Button/styles/normal = SubResource("StyleBoxEmpty_wv7et")
+Button/styles/pressed = SubResource("StyleBoxEmpty_lgkij")
