@@ -388,7 +388,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/margin_top = 151
 
 [node name="CenterContainer" type="CenterContainer" parent="MarginContainer" unique_id=1552449375]
 layout_mode = 2
@@ -396,20 +395,26 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 
 [node name="MainMenuFrame" type="Control" parent="MarginContainer/CenterContainer" unique_id=488843142]
-custom_minimum_size = Vector2(500, 612.75)
+custom_minimum_size = Vector2(500, 700)
 layout_mode = 2
 
 [node name="Frame" type="TextureRect" parent="MarginContainer/CenterContainer/MainMenuFrame" unique_id=1994496511]
-modulate = Color(1, 1, 1, 0.33333334)
+modulate = Color(1, 1, 1, 0.41568628)
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = 118.48
-offset_bottom = 118.47998
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -256.0
+offset_top = -256.0
+offset_right = 256.0
+offset_bottom = 256.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("3_exv73")
+expand_mode = 1
 
 [node name="Main_Menu" type="VBoxContainer" parent="MarginContainer/CenterContainer/MainMenuFrame" unique_id=1952996832]
 layout_mode = 1
@@ -418,41 +423,24 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -110.00012
-offset_top = -420.0
-offset_right = 110.00012
-offset_bottom = 420.0
+offset_left = -99.5
+offset_top = -264.0
+offset_right = 99.5
+offset_bottom = 264.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Egg_Controller" type="Control" parent="MarginContainer/CenterContainer/MainMenuFrame/Main_Menu" unique_id=732436684]
-custom_minimum_size = Vector2(220, 73.235)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-
-[node name="Egg_Main" type="AnimatedSprite2D" parent="MarginContainer/CenterContainer/MainMenuFrame/Main_Menu/Egg_Controller" unique_id=954320681]
-position = Vector2(110, -70)
+[node name="Egg_Main" type="AnimatedSprite2D" parent="MarginContainer/CenterContainer/MainMenuFrame/Main_Menu" unique_id=954320681]
 sprite_frames = SubResource("SpriteFrames_j2ppo")
 animation = &"Egg_Loop"
 frame_progress = 0.1055835
 
-[node name="Space3" type="Button" parent="MarginContainer/CenterContainer/MainMenuFrame/Main_Menu" unique_id=789711897]
+[node name="Space2" type="Button" parent="MarginContainer/CenterContainer/MainMenuFrame/Main_Menu" unique_id=882530911]
 layout_mode = 2
 theme = ExtResource("3_glbon")
 text = " "
 
-[node name="Space4" type="Button" parent="MarginContainer/CenterContainer/MainMenuFrame/Main_Menu" unique_id=984298268]
-layout_mode = 2
-theme = ExtResource("3_glbon")
-text = " "
-
-[node name="Space5" type="Button" parent="MarginContainer/CenterContainer/MainMenuFrame/Main_Menu" unique_id=60310021]
-layout_mode = 2
-theme = ExtResource("3_glbon")
-text = " "
-
-[node name="Space6" type="Button" parent="MarginContainer/CenterContainer/MainMenuFrame/Main_Menu" unique_id=91760630]
+[node name="Space3" type="Button" parent="MarginContainer/CenterContainer/MainMenuFrame/Main_Menu" unique_id=1676447151]
 layout_mode = 2
 theme = ExtResource("3_glbon")
 text = " "
@@ -463,11 +451,6 @@ theme = ExtResource("2_nlkkf")
 text = "PLAY"
 
 [node name="Space" type="Button" parent="MarginContainer/CenterContainer/MainMenuFrame/Main_Menu" unique_id=2132090128]
-layout_mode = 2
-theme = ExtResource("3_glbon")
-text = " "
-
-[node name="Space2" type="Button" parent="MarginContainer/CenterContainer/MainMenuFrame/Main_Menu" unique_id=1525001893]
 layout_mode = 2
 theme = ExtResource("3_glbon")
 text = " "
