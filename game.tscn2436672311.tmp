@@ -381,24 +381,18 @@ RichTextLabel/colors/default_color = Color(0.79607844, 0.8352941, 0.8980392, 1)
 RichTextLabel/font_sizes/normal_font_size = 38
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wj41c"]
-bg_color = Color(0, 0, 0, 0.41960785)
-corner_radius_top_left = 20
-corner_radius_top_right = 20
-corner_detail = 10
-expand_margin_left = 25.0
-expand_margin_top = 20.0
-expand_margin_right = 25.0
+bg_color = Color(0.41, 0.41, 0.41, 0)
+draw_center = false
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_baljx"]
-bg_color = Color(0.48, 0.48, 0.48, 0.45490196)
-corner_radius_top_left = 15
-corner_radius_top_right = 15
-corner_radius_bottom_right = 15
-corner_radius_bottom_left = 15
-expand_margin_left = 10.0
-expand_margin_top = 4.0
-expand_margin_right = 10.0
-expand_margin_bottom = 8.0
+content_margin_left = 2.0
+content_margin_right = 2.0
+bg_color = Color(0.09, 0.09, 0.09, 0.7411765)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+corner_detail = 20
 
 [node name="Game" type="Control" unique_id=1732311145]
 layout_mode = 3
@@ -576,7 +570,7 @@ bbcode_enabled = true
 scroll_active = false
 justification_flags = 161
 
-[node name="OnscreenKeyboard" type="PanelContainer" parent="." unique_id=1643943025]
+[node name="OnscreenKeyboard" type="PanelContainer" parent="." unique_id=1669006475]
 visible = false
 layout_mode = 1
 anchors_preset = 7
@@ -584,24 +578,22 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -344.0
-offset_top = -220.0
-offset_right = 344.0
+offset_left = -300.0
+offset_top = -1268.0
+offset_right = 300.0
+offset_bottom = -730.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_styles/panel = SubResource("StyleBoxFlat_wj41c")
 script = ExtResource("71_wj41c")
-key_height = 48
-key_width = 38
-shift_key_width = 100
-number_key_width = 100
-separation = Vector2i(25, 18)
+separation = Vector2i(5, -250)
 background = SubResource("StyleBoxFlat_wj41c")
 normal = SubResource("StyleBoxFlat_baljx")
-font_size = 36
-font_color_normal = Color(1, 1, 1, 0.827451)
-font_color_hover = Color(1, 1, 1, 0.90588236)
-font_color_pressed = Color(1, 1, 1, 0.90588236)
+hover = SubResource("StyleBoxFlat_baljx")
+pressed = SubResource("StyleBoxFlat_baljx")
+font_size = 32
+font_color_normal = Color(1, 1, 1, 0.7490196)
+font_color_hover = Color(1, 1, 1, 0.9490196)
 metadata/_custom_type_script = "uid://e4v7hpx54kkg"
 
 [connection signal="focus_entered" from="MarginContainer/VBoxContainer/Answer_One" to="." method="_on_answer_one_focus_entered"]
