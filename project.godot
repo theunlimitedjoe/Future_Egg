@@ -26,10 +26,6 @@ window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 window/handheld/orientation=1
 
-[editor_plugins]
-
-enabled=PackedStringArray("res://addons/onscreenkeyboard/plugin.cfg")
-
 [input_devices]
 
 virtual_controller/ios/enable_controller=false
